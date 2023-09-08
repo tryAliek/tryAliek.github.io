@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+     for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -44,7 +44,20 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-
+createPlatform(1000, 650, 100, 20);
+createPlatform(1200, 550, 100, 20);
+createPlatform(1030, 450, 50, 10);
+createPlatform(1305, 400, 50, 20);
+createPlatform(300, 500, 650, 20);
+createPlatform(300, 200, 20, 300)
+createPlatform(325, 360, 50, 20);
+createPlatform(400, 250, 500, 20);
+createPlatform(1000, 220, 10, 5);
+createPlatform(900, 90, 300, 10);
+createPlatform(1130, 225, 10, 5);
+createPlatform(1200, 235, 200, 10);
+createPlatform(100, 200, 70, 5);
+createPlatform(1300, 180, 30, 10);
 
     
     // TODO 2
@@ -53,7 +66,10 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
+createCollectable("database", 1305, 250, 1, 1);
+createCollectable("kennedi", 1300, 50, 1, 1);
+createCollectable("database", 100, 100, 1, 1);
+createCollectable("database", 900, 40, 1, 1);
 
 
     // TODO 3
@@ -62,7 +78,9 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
+createCannon("right", 500, 3000);
+createCannon("left", 150, 6500);
+createCannon("top", 1200, 2500)
 
 
     /////////////////////////////////////////////////
