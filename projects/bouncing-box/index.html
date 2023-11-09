@@ -111,7 +111,12 @@
 			function handleBoxClick() {
 				positionX = 0;
 				changeBoxText(points = points + 1);
-				speed = speed + 3
+				if(speed > 0){
+					 speed = speed + 3;
+					}
+				if(speed < 0){
+					speed = speed - 3;
+				}
 				var randomColorX = Math.random() * 255;
                     var randomColorY = Math.random() * 255;
                     var randomColorZ = Math.random() * 255;
